@@ -1,0 +1,9 @@
+.text{
+    background-color: #F0DBFA;
+        color: #C863F7;
+        font-weight: 500;
+        font-size: 20px;
+        border-radius: 10px;
+        width: 300px;
+        margin: 20px auto ;
+}

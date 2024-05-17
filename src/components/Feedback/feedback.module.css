@@ -5,5 +5,17 @@
 }
 
 .listItem{
-    color: ;
+    color: #B320F7;
+    font-weight: 500;
+}
+
+.listSpan{
+    font-weight: 700;
+    color: #C863F7;
+}
+
+.listTotal{
+    color: #3F0D56;
+    text-decoration: underline;
+    font-weight: 800;
 }
