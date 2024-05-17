@@ -1,7 +1,7 @@
 
 //   import { useState } from 'react';
 
-export default function Options() {
+export default function Options({updateFeedback}) {
     
 // const [click, setClick] = useState(0)
   
@@ -10,9 +10,10 @@ export default function Options() {
 //     }
     return(
     <>
-        <button >Good</button>
-        <button >Neutral</button>
-        <button >Bad</button>
+        <button onClick={() => updateFeedback("good")} >Good</button>
+        <button onClick={() => updateFeedback("neutral")}>Neutral</button>
+        <button onClick={() => updateFeedback("bad")}>Bad</button>
+        <button>Reset</button>
         </>
     )
 }
