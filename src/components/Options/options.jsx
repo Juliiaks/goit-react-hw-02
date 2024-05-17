@@ -1,7 +1,7 @@
 
 //   import { useState } from 'react';
 
-export default function Options({updateFeedback}) {
+export default function Options({updateFeedback, resetFeedback, totalFeedback}) {
     
 // const [click, setClick] = useState(0)
   
@@ -13,7 +13,7 @@ export default function Options({updateFeedback}) {
         <button onClick={() => updateFeedback("good")} >Good</button>
         <button onClick={() => updateFeedback("neutral")}>Neutral</button>
         <button onClick={() => updateFeedback("bad")}>Bad</button>
-        <button>Reset</button>
+        <button onClick={resetFeedback} hidden={totalFeedback===0}>Reset</button>
         </>
     )
 }
