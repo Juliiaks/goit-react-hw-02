@@ -6,10 +6,11 @@
     
 }
 
-.feedbackBtn:hover, .feedbackBtn:focus{
+.feedbackBtn:hover{
     background-color: #C863F7;
     border: 2px solid #B320F7;
     color: #F0DBFA;
+    outline: none;
 }
 
 
@@ -26,7 +27,7 @@
     color: #F0DBFA;
 }
 
-.resetBtn:hover, .resetBtn:focus{
+.resetBtn:hover{
 background-color: #790BAC;
     border: 2px solid #C863F7;
     color: #F0DBFA;
