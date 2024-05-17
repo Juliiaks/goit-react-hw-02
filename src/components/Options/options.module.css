@@ -1,0 +1,32 @@
+.feedbackBtn{
+    background-color: #F0DBFA;
+    border: 2px solid #C863F7;
+    color: #C863F7;
+    width: 120px;
+}
+
+.feedbackBtn:hover, .feedbackBtn:focus{
+    background-color: #C863F7;
+    border: 2px solid #B320F7;
+    color: #F0DBFA;
+}
+
+
+.container{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.resetBtn{
+    background-color: #B320F7;
+    border: 2px solid #C863F7;
+    color: #F0DBFA;
+}
+
+.resetBtn:hover, .resetBtn:focus{
+background-color: #790BAC;
+    border: 2px solid #C863F7;
+    color: #F0DBFA;
+}

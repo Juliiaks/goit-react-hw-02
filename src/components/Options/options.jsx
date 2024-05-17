@@ -1,19 +1,14 @@
 
-//   import { useState } from 'react';
+import css from "./options.module.css"
 
 export default function Options({updateFeedback, resetFeedback, totalFeedback}) {
     
-// const [click, setClick] = useState(0)
-  
-//     const handleClick = () => {
-//         setClick(click + 1)
-//     }
     return(
-    <>
-        <button onClick={() => updateFeedback("good")} >Good</button>
-        <button onClick={() => updateFeedback("neutral")}>Neutral</button>
-        <button onClick={() => updateFeedback("bad")}>Bad</button>
-        <button onClick={resetFeedback} hidden={totalFeedback===0}>Reset</button>
-        </>
+    <div className={css.container}>
+        <button className={css.feedbackBtn} onClick={() => updateFeedback("good")} >😁Good</button>
+        <button className={css.feedbackBtn} onClick={() => updateFeedback("neutral")}>😐Neutral</button>
+        <button className={css.feedbackBtn} onClick={() => updateFeedback("bad")}>😔Bad</button>
+        <button className={css.resetBtn} onClick={resetFeedback} hidden={totalFeedback===0}>Reset</button>
+        </div>
     )
 }
